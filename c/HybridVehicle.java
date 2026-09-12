@@ -31,6 +31,16 @@ public class HybridVehicle implements GasolineInterface, ElectricInterface {
     }
 
     @Override
+    public void setCostPerGallon(double costPerGallon){
+        this.costPerGallon = costPerGallon;
+    }
+
+    @Override
+    public double getCostPerGallon() {
+        return costPerGallon;
+    }
+
+    @Override
     public double calcMPGe() {
         if (totalkWh == 0) {
             return 0.0;
@@ -46,6 +56,16 @@ public class HybridVehicle implements GasolineInterface, ElectricInterface {
     @Override
     public void setTotalkWh(double totalkWh) {
         this.totalkWh = totalkWh;
+    }
+
+    @Override
+    public void setCostPerkWh(double totalkWh) {
+        this.costPerkWh = costPerkWh;
+    }
+
+    @Override
+    public double getCostPerkWh() {
+        return costPerkWh;
     }
 
     public double calcAverageHybridMPG() {
