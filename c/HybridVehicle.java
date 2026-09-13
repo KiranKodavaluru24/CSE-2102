@@ -59,7 +59,7 @@ public class HybridVehicle implements GasolineInterface, ElectricInterface {
     }
 
     @Override
-    public void setCostPerkWh(double totalkWh) {
+    public void setCostPerkWh(double costPerkWh) {
         this.costPerkWh = costPerkWh;
     }
 
